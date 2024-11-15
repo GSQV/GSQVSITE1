@@ -1,0 +1,31 @@
+    {
+        "en": {
+            "aboutMe": [
+                "Hello! My name is Nikita Mashkin, and I am a 4th-year student at VyatGU College, where I am actively honing my skills in programming and creative projects.",
+                "Currently, I focus on working with Python and C#, which allow me to implement various projects while continuously expanding my technical expertise.",
+                "However, programming is only one part of my professional profile. I am deeply passionate about pixel art and animation, which enables me not only to bring ideas to life through code but also to make them visually dynamic.",
+                "For pixel art, I use Aseprite, my primary tool for creating details that express the atmosphere and style of projects.",
+                "Animating pixel characters and objects allows me to experiment with movement and bring small stories to life, even within a single frame.",
+                "My experience includes working as an artist on two game development projects, where I was responsible for the visual component.",
+                "This was a unique experience, where I combined my technical skills with artistic vision to create vibrant and memorable game elements.",
+                "It was fascinating to work on visuals that complement gameplay and enhance the atmosphere.",
+                "I am dedicated to continuous improvement, both in programming and art, as I believe the intersection of these fields leads to creating unique, unforgettable projects.",
+                "In the future, I plan to further develop my skills in both areas, creating projects where coding and art go hand in hand."
+            ]
+        },
+        "ru": {
+            "aboutMe": [
+                "Привет! Меня зовут Машкин Никита, и я студент 4-го курса Колледжа ВятГУ, где активно развиваю свои навыки в программировании и творческих проектах.",
+                "На данный момент я сосредоточен на работе с языками Python и C#, благодаря которым реализую различные проекты и постепенно наращиваю свои технические знания.",
+                "Однако программирование — это лишь одна сторона моего профессионального профиля.",
+                "Я глубоко увлечён пиксельным искусством и анимацией, что позволяет мне не только воплощать идеи через код, но и визуально оживлять их.",
+                "В работе над пиксельным артом я использую программу Aseprite, которая стала моим основным инструментом для создания деталей, выражающих атмосферу и стиль проектов.",
+                "Анимация пиксельных персонажей и объектов позволяет мне экспериментировать с движением и создавать маленькие истории даже в рамках одной сцены.",
+                "Мой опыт включает работу художником на двух игровых проектах, где я отвечал за визуальную составляющую.",
+                "Это был уникальный опыт, в котором я сочетал технические навыки с художественным видением, создавая яркие и запоминающиеся элементы для игр.",
+                "Мне было интересно работать над тем, чтобы образы гармонично дополняли игровой процесс и атмосферу.",
+                "Я стремлюсь постоянно совершенствовать себя, как в программировании, так и в художественном направлении, поскольку считаю, что именно на пересечении этих областей можно создавать уникальные, запоминающиеся проекты.",
+                "В будущем я планирую продолжать развивать навыки в обеих сферах, создавая проекты, где программирование и искусство идут рука об руку."
+            ]
+        }
+    }

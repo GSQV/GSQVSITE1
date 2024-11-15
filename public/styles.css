@@ -1,0 +1,248 @@
+/* Основной сброс стилей */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+}
+
+.header {
+    background-color: #4285f4;
+    padding: 15px;
+    color: white;
+    text-align: center;
+    position: fixed; /* Фиксированное позиционирование */
+    top: 0;          /* Привязка к верхней части экрана */
+    width: 100%;     /* Ширина на весь экран */
+    z-index: 1000;   /* Обеспечение перекрытия остальных элементов */
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    transition: background-color 0.3s, color 0.3s;
+    position: relative;
+    padding-top: 60px; /* Отступ, соответствующий высоте шапки */
+}
+
+.menu-toggle {
+    position: absolute;
+    right: 15px;
+    top: 15px;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+/* Стили бокового меню */
+.side-menu {
+    position: fixed;
+    top: 0;
+    right: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #ffffff;
+    transition: right 0.3s ease;
+    box-shadow: -4px 0 8px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    z-index: 1000; /* Чтобы меню было на переднем плане */
+}
+
+.side-menu.active {
+    right: 0;
+}
+
+.tab-link {
+    display: block;
+    padding: 15px 20px;
+    margin: 5px 0;
+    color: black;
+    background-color: #f0f0f0;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.tab-link:hover {
+    background-color: #dcdcdc;
+}
+
+/* Темная тема для бокового меню */
+.side-menu.dark-theme {
+    background-color: #1e1e1e;
+}
+
+.tab-link.dark-theme {
+    background-color: #2c2c2c;
+    color: #e0e0e0;
+}
+
+.tab-link.dark-theme:hover {
+    background-color: #3c3c3c;
+}
+
+/* Стиль активной вкладки */
+.tab-link.active {
+    background-color: #ddd;
+    color: #000;
+}
+
+.tab-content {
+    padding: 20px;
+    background-color: white;
+    margin: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Проекты */
+.project-tile {
+    background-color: #e3f2fd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+    transition: transform 0.2s ease;
+}
+
+.project-tile:hover {
+    transform: scale(1.03);
+}
+
+input, textarea, button[type="submit"] {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 4px;
+    border: 1px solid #ddd;
+}
+
+button[type="submit"] {
+    background-color: #4285f4;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: #357ae8;
+}
+
+/* Темная тема */
+body.dark-theme {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+.header.dark-theme {
+    background-color: #1e1e1e;
+}
+
+.tab-content.dark-theme {
+    background-color: #1e1e1e;
+}
+
+.project-tile.dark-theme {
+    background-color: #333;
+    color: #e0e0e0;
+}
+
+input.dark-theme, 
+textarea.dark-theme, 
+button.dark-theme {
+    background-color: #2c2c2c;
+    color: white;
+    border: 1px solid #444;
+}
+
+/* Оверлей для блокировки фоновых элементов */
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: none;
+    z-index: 999;
+}
+/* Стиль для проекта в тёмной теме */
+.project-tile.dark-theme {
+    background-color: #444;
+    color: #e0e0e0;
+}
+
+/* Стили для hover на проекте в тёмной теме */
+.project-tile.dark-theme:hover {
+    background-color: #555;
+}
+
+.overlay.active {
+    display: block;
+}
+
+/* Увеличенный шрифт для текста приветственного сообщения */
+#general-info .welcome-message {
+    font-size: 18px; /* увеличен на 4 пункта */
+    line-height: 1.6; /* улучшение читаемости с увеличенным межстрочным интервалом */
+    margin-bottom: 15px; /* добавляет отступ между абзацами */
+}
+
+.project-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.github-link {
+    display: inline-block;
+    margin-top: 10px;
+    color: #4285f4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.github-link:hover {
+    color: #357ae8;
+    text-decoration: underline;
+}
+
+.project-image {
+    width: 80%;           /* Уменьшаем ширину изображения до 80% от родительского элемента */
+    height: auto;         /* Высота будет пропорциональна ширине */
+    max-width: 100%;      /* Чтобы изображение не выходило за пределы контейнера */
+    display: block;       /* Делаем картинку блочным элементом */
+    margin: 0 auto;       /* Центрируем картинку по горизонтали */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Website</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header class="header">
+        <h1>GSQV</h1>
+        <button id="menu-toggle" class="menu-toggle">≡</button>
+    </header>
+
+    <div id="overlay" class="overlay"></div> <!-- Оверлей для блокировки фона -->
+
+    <nav id="side-menu" class="side-menu">
+        <a href="javascript:void(0)" button id="about-me" onclick="openTab('general-info')" class="tab-link">About Me</a>
+        <a href="javascript:void(0)" button id="projects" onclick="openTab('projects')" class="tab-link">Projects</a>
+        <a href="javascript:void(0)" button id="contact" onclick="openTab('contact')" class="tab-link">Contact</a>
+        <button id="theme-toggle" onclick="toggleTheme()" class="tab-link">Toggle Theme</button>
+        <button id="lang-toggle" onclick="toggleLanguage()" class="tab-link">Русский</button>
+    </nav>
+
+    <main>
+        <section id="general-info" class="tab-content" style="display: none;">
+            <h2 class="title" data-lang="en">About Me</h2>
+            <p class="welcome-message" data-lang="en">Welcome to my personal website. Here, you'll find information about my background, skills, and projects.</p>
+            <p class="welcome-message" data-lang="ru" style="display:none;">Добро пожаловать на мой личный сайт. Здесь вы найдете информацию о моем образовании, навыках и проектах.</p>
+        </section>
+
+        <section id="projects" class="tab-content" style="display: none;">
+            <h2 class="title" data-lang="en">Projects</h2>
+            <h2 class="title" data-lang="ru" style="display:none;">Проекты</h2>
+
+            <!-- Project 1 -->
+            <div class="project-tile">
+                <img src="images/DIID.jpg" alt="Project 1" class="project-image">
+                <h3 data-lang="en">DIID</h3>
+                <h3 data-lang="ru" style="display:none;">DIID</h3>
+                <a href="https://github.com/GSQV/DIID" target="_blank" class="github-link">GitHub Repository</a>
+            </div>
+
+            <!-- Project 2 -->
+            <div class="project-tile">
+                <img src="images/Neurunner.jpg" alt="Project 2" class="project-image">
+                <h3 data-lang="en">Neurunner</h3>
+                <h3 data-lang="ru" style="display:none;">Neurunner</h3>
+                <a href="https://github.com/GSQV/Neurunner" target="_blank" class="github-link">GitHub Repository</a>
+            </div>
+
+            <!-- Project 3 -->
+            <div class="project-tile">
+                <img src="images/ArmyShop.jpg" alt="Project 3" class="project-image">
+                <h3 data-lang="en">ArmyShop</h3>
+                <h3 data-lang="ru" style="display:none;">ArmyShop</h3>
+                <a href="https://github.com/GSQV/ArmyShop" target="_blank" class="github-link">GitHub Repository</a>
+            </div>
+        </section>
+
+        <section id="contact" class="tab-content" style="display: none;">
+    <h2 class="title" data-lang="en">Contact</h2>
+    <h2 class="title" data-lang="ru" style="display:none;">Контакт</h2>
+    <form id="feedback-form">
+        <label for="name" data-lang="en">Your Name</label>
+        <label for="name" data-lang="ru" style="display:none;">Ваше имя</label>
+        <input type="text" id="name" name="name">
+        
+        <label for="email" data-lang="en">Your Email</label>
+        <label for="email" data-lang="ru" style="display:none;">Ваш Email</label>
+        <input type="email" id="email" name="email">
+        
+        <label for="message" data-lang="en">Your Message</label>
+        <label for="message" data-lang="ru" style="display:none;">Ваше сообщение</label>
+        <textarea id="message" name="message"></textarea>
+        
+        <!-- Кнопки отправки для каждого языка -->
+        <button id="send-en" type="submit" data-lang="en">Send</button>
+        <button id="send-ru" type="submit" data-lang="ru" style="display:none;">Отправить</button>
+    </form>
+</section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
